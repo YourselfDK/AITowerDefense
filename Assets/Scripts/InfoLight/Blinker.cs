@@ -8,13 +8,13 @@ public class Blinker : MonoBehaviour
 {
     private float currentIntensity;
     private float minIntensity = 10;
-    private float maxIntensity = 65;
+    private float maxIntensity = 70;
     private float nextChange;
 
     private void OnEnable()
     {
-        gameObject.GetComponent<Light2D>().intensity = 65;
-        currentIntensity = 65;
+        gameObject.GetComponent<Light2D>().intensity = 70;
+        currentIntensity = 70;
         StartCoroutine(BackAndForth());
     }
     private void Update()
@@ -30,22 +30,22 @@ public class Blinker : MonoBehaviour
             nextChange = -5;
             currentIntensity += nextChange;
             gameObject.GetComponent<Light2D>().intensity = currentIntensity;
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
         else if (currentIntensity < minIntensity || currentIntensity == minIntensity)
         {
             nextChange = 5;
             currentIntensity += nextChange;
             gameObject.GetComponent<Light2D>().intensity = currentIntensity;
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         } 
         while (currentIntensity < maxIntensity && currentIntensity > minIntensity)
         {
             currentIntensity += nextChange;
             gameObject.GetComponent<Light2D>().intensity = currentIntensity;
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         }
     }
 
