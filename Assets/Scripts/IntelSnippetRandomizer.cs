@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI.Table;
-using TMPro;
 
 public class IntelSnippetRandomizer : MonoBehaviour
 {
@@ -20,6 +23,7 @@ public class IntelSnippetRandomizer : MonoBehaviour
         //This code should be attached to a prefab that can reference a TMPro textbox attached to itself.
         //Possibly place the strings in a scriptable object.
         int amountOfSnippets = UnityEngine.Random.Range(1, maxAmountOfSnippets+1);
+        print("Amount of snippets = " + amountOfSnippets);
         if(trueInformation == true)
         {
             PickRandomFromTrueList(amountOfSnippets);
@@ -38,7 +42,7 @@ public class IntelSnippetRandomizer : MonoBehaviour
 
     public void PickRandomFromTrueList(int trueSnippets)
     {
-        string[] mainTextTrue = new string[]
+        List<string> mainTextTrue = new List<string>
         {
             "Harry ",
             "Ron ",
@@ -46,26 +50,38 @@ public class IntelSnippetRandomizer : MonoBehaviour
         };
         for (int x = 0; x < trueSnippets; x++)
         {
-            string randomTrueIntel = mainTextTrue[UnityEngine.Random.Range(0, mainTextTrue.Length)];
-            myTextField.text = myTextField.text + randomTrueIntel;
+            if (mainTextTrue.Count == 0)
+                break; // Avoid errors if we run out of options
+            int randomIndex = UnityEngine.Random.Range(0, mainTextTrue.Count);
+            string randomTrueIntel = mainTextTrue[randomIndex];
+            myTextField.text += randomTrueIntel;
+            // Remove the chosen element so it can't be picked again
+            mainTextTrue.RemoveAt(randomIndex);
         }
     }
 
     public void PickRandomFromFalseList(int snippets)
     {
-        string[] mainTextFalse = new string[]
-        {
-            "HarryFalse ",
-            "RonFalse ",
-            "HermioneFalse "
-        };
-        int falseSnippets = UnityEngine.Random.Range(1, snippets+1);
+        // Use a List<string> instead of string[]
+        List<string> mainTextFalse = new List<string>
+    {
+        "HarryFalse ",
+        "RonFalse ",
+        "HermioneFalse ",
+    };
+        int falseSnippets = UnityEngine.Random.Range(1, snippets + 1);
+        print("False snippets = " + falseSnippets);
         for (int x = 0; x < falseSnippets; x++)
         {
-            string randomFalseIntel = mainTextFalse[UnityEngine.Random.Range(0, mainTextFalse.Length)];
-            myTextField.text = myTextField.text + randomFalseIntel;
+            if (mainTextFalse.Count == 0)
+                break; // Avoid errors if we run out of options
+            int randomIndex = UnityEngine.Random.Range(0, mainTextFalse.Count);
+            string randomFalseIntel = mainTextFalse[randomIndex];
+            myTextField.text += randomFalseIntel;
+            // Remove the chosen element so it can't be picked again
+            mainTextFalse.RemoveAt(randomIndex);
         }
-        PickRandomFromTrueList(snippets-falseSnippets);
+        PickRandomFromTrueList(snippets - falseSnippets);
     }
 
 
