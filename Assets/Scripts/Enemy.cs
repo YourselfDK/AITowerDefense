@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Path currentPath;
     private Vector3 _targetPosition;
     private int _currentWaypoint;
