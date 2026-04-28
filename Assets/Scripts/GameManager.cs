@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public GameObject plusOne;
     public GameObject plusTwo;
 
+    public Dictionary<string, Sprite> backgrounds;
+
+    public Sprite forThisBackground;
+    
+
     [Header("Intel")]
     public int maxLives = 100;
     public static int currentLives;

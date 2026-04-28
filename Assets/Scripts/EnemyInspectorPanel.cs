@@ -12,8 +12,6 @@ public class EnemyInspectorPanel : MonoBehaviour
     public TMP_Text displayText;
 
     IntelSnippetRandomizer intel;
-    
-    public Sprite[] backgrounds;
 
     
     void Awake()
