@@ -27,26 +27,27 @@ public class Sargentcontroller : MonoBehaviour
 
     public void endOne()
     {
-        
+        Sargent.SetActive(true);
+        ShowSpeech("You even understand what’s going on yet?", 56f, 218f);
     }
 
     public void endTwo()
     {
-        
+        Sargent.SetActive(true);
     }
 
     public void endThree()
     {
-        
+        Sargent.SetActive(true);
     }
 
     public void endFive()
     {
-        
+        Sargent.SetActive(true);
     }
 
     public void endSeven()
     {
-        
+        Sargent.SetActive(true);
     }
 }
