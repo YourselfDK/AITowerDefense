@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WaveController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class WaveController : MonoBehaviour
     public static int endNumber = 0;
 
     Sargentcontroller SC; 
+
+    public Button NextWave;
 
     void Start()
     {
@@ -48,6 +51,7 @@ public class WaveController : MonoBehaviour
         spawnEnemy.queueFinished = false;
         GameObject enemy = GameObject.FindWithTag("Enemy");
         Destroy(enemy);
+        NextWave.gameObject.SetActive(true);
 
         if (endNumber == 1)
         {
