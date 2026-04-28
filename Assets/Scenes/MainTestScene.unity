@@ -983,7 +983,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1628,6 +1628,9 @@ MonoBehaviour:
   plusTwo: {fileID: 689222264}
   maxLives: 10
   lostLivesBetweenPopup: 5
+  audioSource: {fileID: 0}
+  loseLifeAudio: {fileID: 0}
+  gainLifeAudio: {fileID: 0}
   livesText: {fileID: 249480260}
   consequencePanel: {fileID: 744430953}
   consequenceText: {fileID: 759121242}
