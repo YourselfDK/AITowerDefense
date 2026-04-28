@@ -233,6 +233,8 @@ MonoBehaviour:
   click6: {fileID: 0}
   click6v2: {fileID: 0}
   click7: {fileID: 0}
+  loseLife: {fileID: 0}
+  gainLife: {fileID: 0}
 --- !u!82 &3064079674957905516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -562,8 +564,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -594,7 +596,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -169.05032, y: 42.26236, z: -180.3205, w: 188.77315}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

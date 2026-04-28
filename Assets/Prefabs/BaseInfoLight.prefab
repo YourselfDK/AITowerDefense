@@ -233,6 +233,8 @@ MonoBehaviour:
   click6: {fileID: 0}
   click6v2: {fileID: 0}
   click7: {fileID: 0}
+  loseLife: {fileID: 0}
+  gainLife: {fileID: 0}
 --- !u!82 &3064079674957905516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -562,8 +564,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -594,7 +596,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 161.57666}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -693,15 +695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyInspectorPanel
   panel: {fileID: 3264872911610571152}
   displayText: {fileID: 2760706256738356275}
-  backgrounds:
-  - {fileID: -4991946396679394216, guid: 8f93f4480c51f114688254cdf0701eed, type: 3}
-  - {fileID: -8030092173116973231, guid: 260e598bf6545a14eaa108bfbbf1a3b1, type: 3}
-  - {fileID: 7974323562296972490, guid: 94707f1b013abca478b9ffebc1733f23, type: 3}
-  - {fileID: -4791712307872920560, guid: 4ddfe4e79636cce41bc909279d914f43, type: 3}
-  - {fileID: -1085864590170278516, guid: 1497f3122361f384b8a1899a0610b14c, type: 3}
-  - {fileID: 4431327025237215020, guid: d07ec7df15d97f64c9b2a7c246ccb2e4, type: 3}
-  - {fileID: -6506067777813018486, guid: 5f5cea533aed66c4f866af20e23d025e, type: 3}
-  - {fileID: -1721965886744879073, guid: 72cfd2f015158b642a8eca6046eee55a, type: 3}
 --- !u!1 &6564016556146137564
 GameObject:
   m_ObjectHideFlags: 0
