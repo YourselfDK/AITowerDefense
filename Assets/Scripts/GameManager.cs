@@ -19,7 +19,9 @@ public class GameManager : MonoBehaviour
     int livesUntilNextPopup;
     int lastNewsIndex = -1;
 
-
+    public AudioSource audioSource;
+    public AudioClip loseLifeAudio;
+    public AudioClip gainLifeAudio;
 
     [Header("UI")]
     public TMP_Text livesText;
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour
         currentLives--;
         livesUntilNextPopup--;
         UpdateUI();
-        SoundPlayer.Instance.loseLifeReact();
+        audioSource.PlayOneShot(loseLifeAudio);
         if (livesUntilNextPopup <= 0)
         {
             ShowConsequencesUI();
@@ -66,7 +68,7 @@ public class GameManager : MonoBehaviour
         currentLives--;
         livesUntilNextPopup--;
         UpdateUI();
-        SoundPlayer.Instance.loseLifeReact();
+        audioSource.PlayOneShot(loseLifeAudio);
         if (livesUntilNextPopup <= 0)
         {
             ShowConsequencesUI();
@@ -87,7 +89,7 @@ public class GameManager : MonoBehaviour
     {
         minus.SetActive(false);
         plusTwo.SetActive(true);
-        SoundPlayer.Instance.gainLifeReact();
+        audioSource.PlayOneShot(gainLifeAudio);
         GameManager.currentLives++;
         Invoke("DisablePlus", 0.5f);
     }
