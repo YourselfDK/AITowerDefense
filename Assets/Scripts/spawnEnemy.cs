@@ -65,6 +65,7 @@ public class spawnEnemy : MonoBehaviour
     {
         isSpawning = true;
         spawnIndex = 0;
+        activeEnemies = 0;
 
         int waveIndex = WaveController.currentWave - 2;
 
@@ -111,6 +112,7 @@ public class spawnEnemy : MonoBehaviour
         }
 
         Instantiate(spawnQueue[spawnIndex], spawnPos, Quaternion.identity);
+        activeEnemies++;
         spawnIndex++;
     }
 }

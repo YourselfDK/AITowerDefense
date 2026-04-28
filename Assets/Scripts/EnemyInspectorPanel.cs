@@ -38,5 +38,6 @@ public class EnemyInspectorPanel : MonoBehaviour
             GameManager.Instance.LoseLifeMistake();
         }
         Destroy(intel.gameObject);
+        spawnEnemy.activeEnemies--;
     }
 }
