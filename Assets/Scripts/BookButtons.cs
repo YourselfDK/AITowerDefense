@@ -6,6 +6,7 @@ public class BookController : MonoBehaviour
 {
     public Button right;
     public Button left;
+    public Button exit;
     public Image book;
     public GameObject myCanvas;
 
@@ -21,6 +22,7 @@ public class BookController : MonoBehaviour
         // Set up button listeners
         right.onClick.AddListener(NextPage);
         left.onClick.AddListener(PreviousPage);
+        exit.onClick.AddListener(Exiter);
 
         UpdateBook();
     }
@@ -60,5 +62,11 @@ public class BookController : MonoBehaviour
 
         left.interactable = currentPage >= 0;
         right.interactable = currentPage < pages.Length - 1;
+    }
+
+    void Exiter()
+    {
+        myCanvas.SetActive(false);
+        audioSource.PlayOneShot(pageTurnClip);
     }
 }
