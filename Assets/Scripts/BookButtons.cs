@@ -45,6 +45,7 @@ public class BookController : MonoBehaviour
         } else
         {
             myCanvas.SetActive(false);
+            audioSource.PlayOneShot(pageTurnClip);
         }
     }
 
