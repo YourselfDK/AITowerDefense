@@ -731,8 +731,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d617db3ab931f47b1f44303ca7987e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spawnEnemy
-  enemyPrefab: {fileID: 1293851106073407587, guid: 0bf484d2a61be664f8986b33a30ac5a2, type: 3}
-  spamRate: 5
+  redPrefab: {fileID: 0}
+  bluePrefab: {fileID: 0}
+  greenPrefab: {fileID: 0}
+  spawnRate: 0
+  waves:
+  - redCount: 5
+    blueCount: 0
+    greenCount: 0
+  - redCount: 8
+    blueCount: 0
+    greenCount: 0
+  - redCount: 5
+    blueCount: 2
+    greenCount: 0
+  - redCount: 0
+    blueCount: 5
+    greenCount: 0
+  - redCount: 0
+    blueCount: 8
+    greenCount: 0
+  - redCount: 1
+    blueCount: 6
+    greenCount: 1
+  - redCount: 0
+    blueCount: 5
+    greenCount: 3
+  - redCount: 0
+    blueCount: 0
+    greenCount: 6
 --- !u!114 &181089313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,6 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5275a2437c1efd748a76c97708a48965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveController
+  waveText: {fileID: 0}
 --- !u!4 &181089314
 Transform:
   m_ObjectHideFlags: 0
@@ -3019,10 +3047,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0.08959627, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0, g: 1, b: 0.09019608, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.9725491, b: 0.08627451, a: 1}
+    m_PressedColor: {r: 0.30312476, g: 0.7207546, b: 0.12375219, a: 1}
+    m_SelectedColor: {r: 0.27450982, g: 0.65882355, b: 0.1137255, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
