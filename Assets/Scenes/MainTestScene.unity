@@ -966,6 +966,10 @@ MonoBehaviour:
   speechThingy: {fileID: 887580111}
   speechText: {fileID: 104714577}
   audioSource: {fileID: 181089316}
+  sigh: {fileID: 8300000, guid: c86bb0316c6689e47b826b4c7d9f82c1, type: 3}
+  clearsthroat: {fileID: 8300000, guid: 3ed7f768f3eb2704587da95d43fa9246, type: 3}
+  grunt: {fileID: 8300000, guid: 1b170dc18847ed741aea8ba061ddeee7, type: 3}
+  growl: {fileID: 8300000, guid: a4376132635516746a5ffc63981e4bec, type: 3}
 --- !u!82 &181089316
 AudioSource:
   m_ObjectHideFlags: 0
