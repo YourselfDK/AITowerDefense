@@ -33,7 +33,10 @@ public class Enemy : MonoBehaviour
             {
             if (GetComponent<IntelSnippetRandomizer>().trueInformation == false)
                 {
-                    GameManager.Instance.LoseLife();
+                    GameManager.Instance.LoseLifeMistake();
+                } else
+                {
+                    GameManager.Instance.currentLives++;
                 }
             Destroy(gameObject);
             }
