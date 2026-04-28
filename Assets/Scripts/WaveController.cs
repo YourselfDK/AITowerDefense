@@ -23,7 +23,7 @@ public class WaveController : MonoBehaviour
         currentWave = 1;
         Wave = false;
         UpdateUI();
-        gameObject.GetComponent<Sargentcontroller>();
+        SC = gameObject.GetComponent<Sargentcontroller>();
 
     }
 

@@ -41,7 +41,7 @@ public class spawnEnemy : MonoBehaviour
 
     void Start()
     {
-        gameObject.GetComponent<WaveController>();
+        WC = gameObject.GetComponent<WaveController>();
         spawnPos = GameObject.Find("SpawnPoint").transform.position;
         isSpawning = false;
         queueFinished = false;
