@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348af1e210a74634a94c5c656d3fcbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  moveSpeed: 1
+  moveSpeed: 0.25
   currentPath: {fileID: 0}
 --- !u!58 &7685189434577333759
 CircleCollider2D:
@@ -209,6 +209,7 @@ MonoBehaviour:
   myTextField: {fileID: 2760706256738356275}
   trueInformation: 1
   maxAmountOfSnippets: 5
+  minAmountOfSnippets: 1
 --- !u!114 &-8530529791435566532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,7 +498,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 400, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8168370961141067722
 CanvasRenderer:
