@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Lives")]
     public int maxLives = 100;
-    public int currentLives;
+    public static int currentLives;
+    public static int currentLivesByMistake;
 
     [Header("UI")]
     public TMP_Text livesText;
@@ -21,6 +22,18 @@ public class GameManager : MonoBehaviour
 
     public void LoseLife()
     {
+        currentLives--;
+        UpdateUI();
+
+        if (currentLives <= 0)
+        {
+            Debug.Log("Game Over!");
+        }
+    }
+
+    public void LoseLifeMistake()
+    {
+        currentLivesByMistake++;
         currentLives--;
         UpdateUI();
 

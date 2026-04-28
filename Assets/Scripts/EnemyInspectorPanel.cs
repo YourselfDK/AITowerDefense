@@ -32,7 +32,7 @@ public class EnemyInspectorPanel : MonoBehaviour
     {
         if (intel.trueInformation == true)
         {
-            GameManager.Instance.LoseLife();
+            GameManager.Instance.LoseLifeMistake();
         }
         Destroy(intel.gameObject);
     }
