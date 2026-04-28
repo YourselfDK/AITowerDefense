@@ -7,6 +7,7 @@ public class BookController : MonoBehaviour
     public Button right;
     public Button left;
     public Image book;
+    public GameObject myCanvas;
 
     public Sprite[] pages;
     public GameObject[] pageText;
@@ -41,6 +42,9 @@ public class BookController : MonoBehaviour
             currentPage--;
             audioSource.PlayOneShot(pageTurnClip);
             UpdateBook();
+        } else
+        {
+            myCanvas.SetActive(false);
         }
     }
 
@@ -53,7 +57,7 @@ public class BookController : MonoBehaviour
             pageText[i].SetActive(i == currentPage);
         }
 
-        left.interactable = currentPage > 0;
+        left.interactable = currentPage >= 0;
         right.interactable = currentPage < pages.Length - 1;
     }
 }
