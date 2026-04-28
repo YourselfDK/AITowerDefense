@@ -26,13 +26,18 @@ public class Enemy : MonoBehaviour
         {
             if(_currentWaypoint < currentPath.Waypoints.Length - 1)
             {
-            _currentWaypoint++;
-            _targetPosition = currentPath.GetPosition(_currentWaypoint);
+                _currentWaypoint++;
+                _targetPosition = currentPath.GetPosition(_currentWaypoint);
             }
             else
             {
-                Destroy(gameObject);
+            if (GetComponent<IntelSnippetRandomizer>().trueInformation == false)
+                {
+                    GameManager.Instance.LoseLife();
+                }
+            Destroy(gameObject);
             }
+
         }
     }
 }
