@@ -12,6 +12,8 @@ public class BookController : MonoBehaviour
     public GameObject[] pageText;
 
     int currentPage = 0;
+    public AudioSource audioSource;
+    public AudioClip pageTurnClip;
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class BookController : MonoBehaviour
         if (currentPage < pages.Length - 1)
         {
             currentPage++;
+            audioSource.PlayOneShot(pageTurnClip);
             UpdateBook();
         }
     }
@@ -36,6 +39,7 @@ public class BookController : MonoBehaviour
         if (currentPage > 0)
         {
             currentPage--;
+            audioSource.PlayOneShot(pageTurnClip);
             UpdateBook();
         }
     }
@@ -44,6 +48,10 @@ public class BookController : MonoBehaviour
     {
         book.sprite = pages[currentPage];
         
+              for (int i = 0; i < pageText.Length; i++)
+        {
+            pageText[i].SetActive(i == currentPage);
+        }
 
         left.interactable = currentPage > 0;
         right.interactable = currentPage < pages.Length - 1;
