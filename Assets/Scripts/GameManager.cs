@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -11,11 +12,6 @@ public class GameManager : MonoBehaviour
     public GameObject minus;
     public GameObject plusOne;
     public GameObject plusTwo;
-
-    public Dictionary<string, Sprite> backgrounds;
-
-    public Sprite forThisBackground;
-    
 
     [Header("Intel")]
     public int maxLives = 100;
