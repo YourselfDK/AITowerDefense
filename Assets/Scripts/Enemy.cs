@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
                     GameManager.Instance.LoseLifeMistake();
                 } else
                 {
-                    GameManager.Instance.currentLives++;
+                    GameManager.currentLives++;
                 }
             Destroy(gameObject);
             }

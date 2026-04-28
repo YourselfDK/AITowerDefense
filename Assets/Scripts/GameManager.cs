@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Lives")]
     public int maxLives = 100;
-    public int currentLives;
+    public static int currentLives;
     public static int currentLivesByMistake;
 
     [Header("UI")]
