@@ -23,6 +23,7 @@ public class spawnEnemy : MonoBehaviour
 
     [Header("Wave Data")]
     WaveController WC;
+    public static int activeEnemies = 0;
     public WaveData[] waves = new WaveData[]
     {
         new WaveData { redCount = 5,  blueCount = 0, greenCount = 0 }, // Round 1
@@ -51,6 +52,13 @@ public class spawnEnemy : MonoBehaviour
     {
         if (WaveController.Wave && !isSpawning && !queueFinished)
             StartSpawning();
+
+        if (queueFinished && activeEnemies <= 0)
+        {
+            queueFinished = false;
+            isSpawning = false;
+            WC.endWave();
+        }
     }
 
     void StartSpawning()
@@ -99,7 +107,6 @@ public class spawnEnemy : MonoBehaviour
         {
             CancelInvoke(nameof(SpawnEnemy));
             queueFinished = true;
-            WC.endWave();
             return;
         }
 
