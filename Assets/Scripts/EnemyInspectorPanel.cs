@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using Microsoft.Unity.VisualStudio.Editor;
+using System.Collections.Generic;
 
 public class EnemyInspectorPanel : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class EnemyInspectorPanel : MonoBehaviour
     public TMP_Text displayText;
 
     IntelSnippetRandomizer intel;
+    
+    public Sprite[] backgrounds;
 
+    
     void Awake()
     {
         panel.SetActive(false);
