@@ -4,6 +4,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameObject minus;
+    public GameObject plusOne;
+    public GameObject plusTwo;
 
     [Header("Lives")]
     public int maxLives = 100;
