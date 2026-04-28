@@ -31,12 +31,13 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-            if (GetComponent<IntelSnippetRandomizer>().trueInformation == false)
+                if (GetComponent<IntelSnippetRandomizer>().trueInformation == false)
                 {
                     GameManager.Instance.LoseLifeMistake();
-                } else
+                }
+                else
                 {
-                    GameManager.currentLives++;
+                    GameManager.Instance.GainLife();
                 }
             Destroy(gameObject);
             }

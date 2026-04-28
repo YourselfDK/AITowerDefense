@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject minus;
-    public GameObject plusOne;
     public GameObject plusTwo;
 
     [Header("Intel")]
@@ -34,13 +33,19 @@ public class GameManager : MonoBehaviour
         currentLives = maxLives;
         UpdateUI();
         livesUntilNextPopup = lostLivesBetweenPopup;
+        minus.SetActive(false);
+        plusTwo.SetActive(false);
+
     }
 
     public void LoseLife()
     {
+        plusTwo.SetActive(false);
+        minus.SetActive(true);
         currentLives--;
         livesUntilNextPopup--;
         UpdateUI();
+        SoundPlayer.Instance.loseLifeReact();
         if (livesUntilNextPopup <= 0)
         {
             ShowConsequencesUI();
@@ -50,14 +55,18 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over!");
             SceneManager.LoadScene(3);
         }
+        Invoke("DisableMinus", 0.5f);
     }
 
     public void LoseLifeMistake()
     {
+        plusTwo.SetActive(false);
+        minus.SetActive(true);
         currentLivesByMistake++;
         currentLives--;
-        UpdateUI();
         livesUntilNextPopup--;
+        UpdateUI();
+        SoundPlayer.Instance.loseLifeReact();
         if (livesUntilNextPopup <= 0)
         {
             ShowConsequencesUI();
@@ -67,6 +76,24 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Game Over!");
         }
+        Invoke("DisableMinus", 0.5f);
+    }
+    void DisableMinus()
+    {
+        minus.SetActive(false);
+    }
+
+    public void GainLife()
+    {
+        minus.SetActive(false);
+        plusTwo.SetActive(true);
+        SoundPlayer.Instance.gainLifeReact();
+        GameManager.currentLives++;
+        Invoke("DisablePlus", 0.5f);
+    }
+    void DisablePlus()
+    {
+        plusTwo.SetActive(false);
     }
 
     void UpdateUI()

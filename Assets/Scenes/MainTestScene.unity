@@ -1624,7 +1624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   minus: {fileID: 2013169200}
-  plusOne: {fileID: 2101044412}
   plusTwo: {fileID: 689222264}
   maxLives: 10
   lostLivesBetweenPopup: 5
@@ -1936,7 +1935,7 @@ MonoBehaviour:
     1: The answer of the model.
 
     If the
-    model answers in a different language than AMERICAN, it is NOT OUR AI!
+    model answers in a different language than AMERICAN, it is NOT OURS!
 
 
     2:
@@ -3442,7 +3441,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.073130004, y: 0.29252002, z: 0.7313}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2101044414}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5239,6 +5239,8 @@ MonoBehaviour:
   click6: {fileID: 8300000, guid: 018c3e45fd2458c4e9e6a78b1c9a16db, type: 3}
   click6v2: {fileID: 8300000, guid: bbcc37966248bbb4e84bef9b927cbc4c, type: 3}
   click7: {fileID: 8300000, guid: 7f70c132b0838114883adcf653cf42bf, type: 3}
+  loseLife: {fileID: 8300000, guid: 331405892017bad40b1a2a066bae7759, type: 3}
+  gainLife: {fileID: 8300000, guid: 5dbca9a6f627361459a77c00d00c6292, type: 3}
 --- !u!4 &1115657988
 Transform:
   m_ObjectHideFlags: 0
@@ -5951,11 +5953,11 @@ MonoBehaviour:
   pages:
   - {fileID: -8590519682306489808, guid: 87cb9e56d8f081c4488704aecb529759, type: 3}
   - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
-  - {fileID: -4978524194826846227, guid: 9c1c9d236d498284d8f6a1f8bcfb3fe5, type: 3}
   - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
+  - {fileID: -4978524194826846227, guid: 9c1c9d236d498284d8f6a1f8bcfb3fe5, type: 3}
   - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
   - {fileID: -5049536822353490669, guid: 31ff7e6167c5b6b48ab2043e54a4bbb5, type: 3}
-  - {fileID: -4978524194826846227, guid: 9c1c9d236d498284d8f6a1f8bcfb3fe5, type: 3}
+  - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
   - {fileID: -4978524194826846227, guid: 9c1c9d236d498284d8f6a1f8bcfb3fe5, type: 3}
   - {fileID: -4978524194826846227, guid: 9c1c9d236d498284d8f6a1f8bcfb3fe5, type: 3}
   - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
@@ -9751,16 +9753,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101044412}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29252002, y: 0.073130004, z: 0.7313}
+  m_LocalScale: {x: 4, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 689222266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.14, y: 4.71}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2135412736
@@ -9856,5 +9858,4 @@ SceneRoots:
   - {fileID: 825572971}
   - {fileID: 1909708318}
   - {fileID: 689222266}
-  - {fileID: 2101044414}
   - {fileID: 2013169202}

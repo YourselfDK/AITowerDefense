@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class SoundPlayer : MonoBehaviour
 {
+    public static SoundPlayer Instance;
     public AudioSource audioSource;
     public AudioClip militaryRadio;
     public AudioClip radioChatter;
@@ -14,12 +15,19 @@ public class SoundPlayer : MonoBehaviour
     public AudioClip click6;
     public AudioClip click6v2;
     public AudioClip click7;
+    public AudioClip loseLife;
+    public AudioClip gainLife;
 
     //public void PlaySound(InputAction.CallbackContext ctx)
     //{
-        //if (ctx.performed)
-            //audioSource.PlayOneShot(militaryRadio);
+    //if (ctx.performed)
+    //audioSource.PlayOneShot(militaryRadio);
     //}
+
+    public void Awake()
+    {
+        Instance = this;
+    }
     public void clickReact1()
     {
         audioSource.PlayOneShot(click1);
@@ -51,5 +59,13 @@ public class SoundPlayer : MonoBehaviour
     public void clickReact7()
     {
         audioSource.PlayOneShot(click7);
+    }
+    public void loseLifeReact()
+    {
+        audioSource.PlayOneShot(loseLife);
+    }
+    public void gainLifeReact()
+    {
+        audioSource.PlayOneShot(gainLife);
     }
 }
