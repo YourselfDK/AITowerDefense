@@ -11,8 +11,8 @@ public class IntelSnippetRandomizer : MonoBehaviour
 {
 
     public TMP_Text myTextField;
-    [SerializeField] bool trueInformation = true;
-    [SerializeField] int maxAmountOfSnippets = 5;
+    public bool trueInformation = true;
+        [SerializeField] int maxAmountOfSnippets = 5;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
@@ -22,6 +22,16 @@ public class IntelSnippetRandomizer : MonoBehaviour
         //Then it needs to pick 1 random snippet from each rule chosen.
         //This code should be attached to a prefab that can reference a TMPro textbox attached to itself.
         //Possibly place the strings in a scriptable object.
+
+        bool EvilInfo = UnityEngine.Random.Range(0, 2) == 1;
+        if (EvilInfo)
+        {
+        trueInformation = false;
+        }
+        else
+        {
+        trueInformation = true;
+        }
         int amountOfSnippets = UnityEngine.Random.Range(1, maxAmountOfSnippets+1);
         print("Amount of snippets = " + amountOfSnippets);
         if(trueInformation == true)
