@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class WaveController : MonoBehaviour
 {
@@ -67,6 +68,10 @@ public class WaveController : MonoBehaviour
         else if (endNumber == 7)
         {
             SC.endSeven();
+        }
+        else if (endNumber == 8)
+        {
+            SceneManager.LoadScene(2);
         }
     }
 
