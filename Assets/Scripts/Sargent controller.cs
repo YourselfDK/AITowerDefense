@@ -34,35 +34,34 @@ public class Sargentcontroller : MonoBehaviour
     public void endOne()
     {
         Sargent.SetActive(true);
-        audioSource.PlayOneShot(grunt);
         ShowSpeech("You even understand what’s going on yet?", 56f, 218f);
     }
 
     public void endTwo()
     {
         Sargent.SetActive(true);
-        audioSource.PlayOneShot(clearsthroat);
+        //audioSource.PlayOneShot(clearsthroat);
         ShowSpeech("Hmmm, but even a child could have caught that.", 56f, 218f);
     }
 
     public void endThree()
     {
         Sargent.SetActive(true);
-        audioSource.PlayOneShot(sigh);
+        //audioSource.PlayOneShot(sigh);
         ShowSpeech("I guess I’ll leave you to your work.", 56f, 218f);
     }
 
     public void endFive()
     {
         Sargent.SetActive(true);
-        audioSource.PlayOneShot(growl);
+        //audioSource.PlayOneShot(growl);
         ShowSpeech("01001101 01100001 01111001 01100010 01100101 00100000 01111001 01101111 01110101 00100111 01110010 01100101 00100000 01101110 01101111 01110100 00100000 01101000 01100001 01101100 01100110 00100000 01100010 01100001 01100100", 56f, 808f);
     }
 
     public void endSeven()
     {
         Sargent.SetActive(true);
-        audioSource.PlayOneShot(grunt);
+        //audioSource.PlayOneShot(grunt);
         ShowSpeech("This must be the last wave!", 56f, 218f);
     }
 }
