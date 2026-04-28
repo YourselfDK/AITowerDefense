@@ -872,6 +872,7 @@ GameObject:
   - component: {fileID: 181089312}
   - component: {fileID: 181089315}
   - component: {fileID: 181089316}
+  - component: {fileID: 181089317}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Enemy
@@ -1068,6 +1069,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &181089317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181089311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a071f266f685ed542bd33006dd6ab911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AAA
 --- !u!1 &220258730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,9 +1641,6 @@ MonoBehaviour:
   plusTwo: {fileID: 689222264}
   maxLives: 10
   lostLivesBetweenPopup: 3
-  audioSource: {fileID: 0}
-  loseLifeAudio: {fileID: 0}
-  gainLifeAudio: {fileID: 0}
   livesText: {fileID: 249480260}
   consequencePanel: {fileID: 744430953}
   consequenceText: {fileID: 759121242}
@@ -3639,9 +3649,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181089313}
-        m_TargetAssemblyTypeName: WaveController, Assembly-CSharp
-        m_MethodName: startWave
+      - m_Target: {fileID: 181089317}
+        m_TargetAssemblyTypeName: AAA, Assembly-CSharp
+        m_MethodName: GoGoGO
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
