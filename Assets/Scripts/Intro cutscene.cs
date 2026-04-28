@@ -147,7 +147,7 @@ public class Introcutscene : MonoBehaviour
         }
         else if (Step == 12)
         {
-            //SceneManager.LoadScene(X);
+            SceneManager.LoadScene(1);
         }
 
     }

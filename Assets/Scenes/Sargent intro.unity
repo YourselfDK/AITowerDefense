@@ -3006,7 +3006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Introcutscene
   myImage: {fileID: 233415956}
   targetPosition: {x: -200, y: -400}
-  speed: 700
+  speed: 200
   audioSource: {fileID: 1065716785}
   footsteps: {fileID: 8300000, guid: ddb13e202f15e0349878db579baaa51b, type: 3}
   speaking: {fileID: 8300000, guid: 23f994a26fbb7e44ea509dc983064122, type: 3}
