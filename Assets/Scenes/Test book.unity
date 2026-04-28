@@ -518,15 +518,12 @@ MonoBehaviour:
     data from anyone we RESPECT requires EVERY type of consent.
 
 
-    1: Get the
-    consent in WRITING or DIGITALLY!
+    1: Get consent
+    in WRITING or DIGITALLY!
 
 
-    2: Only keep the consent while needed!
-
-
-    3:
-    Unequivocal, meaning implied consent is not valid.
+    2: Only keep the consent while needed, if they''re
+    important!
 
 '
   m_isRightToLeft: 0
@@ -665,12 +662,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '3: The intel must mention a ''content cut-off date''. This is the newest
-    information the AI model was trained on.
+  m_text: '3: The ''content cut-off date'' of Eag.LE is 12/03/1997.
 
 
-    4: If the scope of sources is
-    important, general AI has a hard time providing it, REMEMBER THIS!'
+    4: If the
+    scope of sources is important, general AI has a hard time providing it, REMEMBER
+    THIS!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -811,15 +808,15 @@ MonoBehaviour:
 
 
     1:
-    The platform MUST be GDPR compliant!
+    We do NOT CARE about GDPR compliance!
 
 
-    2: If the data of an ALLY is given
-    to the AI, they MUST BE INFORMED!
+    2: If the data of an SOMEONE IMPORTANT
+    is given to the AI, they MUST BE INFORMED!
 
 
-    3: If the personal data of anyone RANKED
-    HIGHER THAN YOU is shared, written permission is needed.'
+    3: If the personal data of anyone
+    RANKED HIGHER THAN YOU is shared, written permission is needed.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1541,16 +1538,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '4: Informed, meaning the subject knows their rights!
+  m_text: '3: Unequivocal, meaning implied consent is not valid.
 
 
-    5: Specific,
-    the consent must be specific to the assignment or purpose of the assignment.
+    4: Informed,
+    meaning the subject knows their rights!
 
 
-    6:
-    Voluntary, there CANNOT have been any disadvantages in connection with declining
-    to consent!'
+    5: Specific, the consent must be
+    specific to the assignment or purpose of the assignment.
+
+
+    6: Voluntary,
+    there CANNOT have been any disadvantages in connection with declining to consent!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_text: "3: The history of the prompts / answers.\nOur AI model is AGGRESSIVE and
     PATRIOTIC! HOO-RAH! \n\n4: The platform.\nOur AI is called Eag.LE.\n\n5: The
     version.\nWe employ version 1.18!\n\n6: The date of training data.\nThe AI was
-    trained on 02/20/2020"
+    trained on 02/20/2021"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2448,26 +2448,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'First off, if any intel from the field mentions Duty to Inform, you must
-    check FIVE things!
+  m_text: 'First off, here are FIVE ground rules!
 
 
     1: Who is the data controller?
 
-    That''s US, we''re
-    receiving and using the intel!
+    That''s
+    US, we''re receiving and using the intel!
 
 
-    2: What is the purpose of data processing?
+    2: What is the purpose of data
+    processing?
 
-    To
-    defeat our enemies!
+    To defeat our enemies!
 
 
     3: Is this data shared with others?
 
-    Our secret
-    intel? NO!'
+    Our
+    secret intel? NO!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2612,8 +2611,8 @@ MonoBehaviour:
     up its claim.
 
 
-    2: Include the norms and values of the AI platform or mention
-    biases!'
+    2: If the norms and values of the AI platform is included,
+    remember: Our AI is NOT BIASED AT ALL!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

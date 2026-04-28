@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -12,7 +12,8 @@ public class IntelSnippetRandomizer : MonoBehaviour
 
     public TMP_Text myTextField;
     public bool trueInformation = true;
-        [SerializeField] int maxAmountOfSnippets = 5;
+    [SerializeField] int maxAmountOfSnippets = 2;
+    [SerializeField] int minAmountOfSnippets = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
@@ -32,7 +33,7 @@ public class IntelSnippetRandomizer : MonoBehaviour
         {
         trueInformation = true;
         }
-        int amountOfSnippets = UnityEngine.Random.Range(1, maxAmountOfSnippets+1);
+        int amountOfSnippets = UnityEngine.Random.Range(minAmountOfSnippets, maxAmountOfSnippets+1);
         print("Amount of snippets = " + amountOfSnippets);
         if(trueInformation == true)
         {
@@ -54,9 +55,34 @@ public class IntelSnippetRandomizer : MonoBehaviour
     {
         List<string> mainTextTrue = new List<string>
         {
-            "Harry ",
-            "Ron ",
-            "Hermione "
+            "This data seems to be owned and controlled by the US millitary. ",
+            "This intel was processed to... 'beat the bad guys'? ",
+            "'TOP SECRET INTEL, eyes off!' ",
+            "They stored this file since 1978. ",
+            "This paper contains a complaint lodged to Sergeant Chatt. ",
+            "*A qoute from a civilian.* ",
+            "AI prompt: How do I code secure communications - God save America! ",
+            "AI prompt: Give me a recipe for chocolate cupcakes - God save America! ",
+            "AI answer: Guns, burgers and FREEDOM! ",
+            "AI answer: Use ALL-AMERICAN CAKEMIX in cupcake cups! ",
+            "AI answer: Make sure NO enemies of the GREAT US of A can crack it! ",
+            "Generated with Eag.LE. ",
+            "AI version: 1.18. ",
+            "It seems they trained this AI on 02/20/2021. ",
+            "AI trained on 02/20/2021. ",
+            "This document violates... every part of GDPR. ",
+            "I've never seen this many violations of GDPR. ",
+            "List of recipes, including Major Tom's favorite cupcake recipe. A letter of his consent is included. ",
+            "AI prompt: Rank the Majors by height - God save America! *A printed email sent to every major is included.* ",
+            "[DATA EXPUNGED] *there is a mouse-shaped hole in this intel.* ",
+            "⬛⬛⬛ney plus. Includes a note 'REDACT THIS IMMEDIATELY!'. ",
+            "George Washington was the first Commanding General of the US army. ",
+            "AI platform evaluation: An AI provided recipe, and seven different cooking blogs about the same food. ",
+            "AI answer: David Bowie IS currently alive, wish he was American! ",
+            "Unequivocal consent means it is NOT implied. ",
+            "Informed consent means the subject knows their rights. ",
+            "Specific consent is only for one particular assignment or purpose. ",
+            "Voluntary consent means there is NOT any disadvantages in declining to consent. "
         };
         for (int x = 0; x < trueSnippets; x++)
         {
@@ -75,9 +101,35 @@ public class IntelSnippetRandomizer : MonoBehaviour
         // Use a List<string> instead of string[]
         List<string> mainTextFalse = new List<string>
     {
-        "HarryFalse ",
-        "RonFalse ",
-        "HermioneFalse ",
+        "This data is owned by US, the Bavarian government. ",
+        "This intel was processed to feed hungry kids. ",
+        "This document is free use. ",
+        "[DATA EXPUNGED] This data exceeded its period for legal storage. ",
+        "*A link to a website detailing data rights.* ",
+        "*An email adress, made for receiving data mis-use complaints.* ",
+        "AI answer: The colour of America is red, white and blue. ",
+        "AI answer: Hvor meget er California værd? ",
+        "AI answer: America is a land riddled with issues. ",
+        "AI prompt: How to establish secure communication networks? ",
+        "AI prompt: What are the best ways to cook steaks? ",
+        "Generated with Eak.LI. ",
+        "AI version: 1.19. ",
+        "AI version: 1.81. ",
+        "It seems they trained this AI on 20/02/2020. ",
+        "This intel is in perfect compliance with GDPR. ",
+        "GDPR rules have been followed. ",
+        "AI prompt: Based on past habits, what is Sergeant Chatt's favorite food? ",
+        "AI prompt: Major Tom has two children. Also - God Save America! ",
+        "A file, which contains a brand new sci-fi movie. ",
+        "A colour swatch of Barbie Pink. ",
+        "AI platform evaluation: An AI provided recipe. ",
+        "AI answer: David Bowie died in 2016, a true loss to England. ",
+        "A note with clearly AI-generated writing from 'Major Tom', excusing a soldier from training. ",
+        "Consent form from Sergeant Chatt dated to 1989. ",
+        "Unequivocal consent means the subject knows what their data is used for. ",
+        "Informed consent means the subject is educated. ",
+        "Specific consent means a specific person consented. ",
+        "Voluntary consent means subject is not threatened to consent. ",
     };
         int falseSnippets = UnityEngine.Random.Range(1, snippets + 1);
         print("False snippets = " + falseSnippets);
