@@ -10,12 +10,17 @@ public class WaveController : MonoBehaviour
 
     [Header("UI")]
     public TMP_Text waveText;
+    public static int endNumber = 0;
+
+    Sargentcontroller SC; 
 
     void Start()
     {
         currentWave = 1;
         Wave = false;
         UpdateUI();
+        gameObject.GetComponent<Sargentcontroller>();
+
     }
 
     void UpdateUI()
@@ -35,11 +40,33 @@ public class WaveController : MonoBehaviour
 
     public void endWave()
     {
+        endNumber++;
         Wave = false;
         spawnEnemy.isSpawning = false;
         spawnEnemy.queueFinished = false;
         GameObject enemy = GameObject.FindWithTag("Enemy");
         Destroy(enemy);
+
+        if (endNumber == 1)
+        {
+            SC.endOne();
+        }
+        else if (endNumber == 2)
+        {
+            SC.endTwo();
+        }
+        else if (endNumber == 3)
+        {
+            SC.endThree();
+        }
+        else if (endNumber == 5)
+        {
+            SC.endFive();
+        }
+        else if (endNumber == 7)
+        {
+            SC.endSeven();
+        }
     }
 
     void Update()
