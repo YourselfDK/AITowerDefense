@@ -522,8 +522,8 @@ MonoBehaviour:
     in WRITING or DIGITALLY!
 
 
-    2: Only keep the consent while needed, if they''re
-    important!
+    2: Only keep the consent while needed, if it''s
+    from someone important!
 
 '
   m_isRightToLeft: 0
@@ -1322,6 +1322,7 @@ MonoBehaviour:
   right: {fileID: 14245499}
   left: {fileID: 1118801996}
   book: {fileID: 1577385978}
+  myCanvas: {fileID: 0}
   pages:
   - {fileID: -8590519682306489808, guid: 87cb9e56d8f081c4488704aecb529759, type: 3}
   - {fileID: 4690309027882781450, guid: aeeb9c8666f43674bb04c9038c5848d0, type: 3}
