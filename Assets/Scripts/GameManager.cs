@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [Header("Lives")]
     public int maxLives = 100;
     public int currentLives;
-    public int currentLivesByMistake;
+    public static int currentLivesByMistake;
 
     [Header("UI")]
     public TMP_Text livesText;
