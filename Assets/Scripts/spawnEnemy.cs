@@ -22,6 +22,7 @@ public class spawnEnemy : MonoBehaviour
     public static bool queueFinished = false;
 
     [Header("Wave Data")]
+    WaveController WC;
     public WaveData[] waves = new WaveData[]
     {
         new WaveData { redCount = 5,  blueCount = 0, greenCount = 0 }, // Round 1
@@ -40,6 +41,7 @@ public class spawnEnemy : MonoBehaviour
 
     void Start()
     {
+        gameObject.GetComponent<WaveController>();
         spawnPos = GameObject.Find("SpawnPoint").transform.position;
         isSpawning = false;
         queueFinished = false;
@@ -97,7 +99,7 @@ public class spawnEnemy : MonoBehaviour
         {
             CancelInvoke(nameof(SpawnEnemy));
             queueFinished = true;
-            WaveController.Wave = false;
+            WC.endWave();
             return;
         }
 
