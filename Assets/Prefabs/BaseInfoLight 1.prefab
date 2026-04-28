@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348af1e210a74634a94c5c656d3fcbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  moveSpeed: 0.2
+  moveSpeed: 0.4
   currentPath: {fileID: 0}
 --- !u!58 &7685189434577333759
 CircleCollider2D:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IntelSnippetRandomizer
   myTextField: {fileID: 2760706256738356275}
   trueInformation: 1
-  maxAmountOfSnippets: 5
+  maxAmountOfSnippets: 2
   minAmountOfSnippets: 1
 --- !u!114 &-8530529791435566532
 MonoBehaviour:

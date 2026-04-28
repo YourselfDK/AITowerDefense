@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
         minus.SetActive(false);
         plusTwo.SetActive(true);
         audioSource.PlayOneShot(gainLifeAudio);
+        UpdateUI();
         GameManager.currentLives++;
         Invoke("DisablePlus", 0.5f);
     }
