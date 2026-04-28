@@ -24,5 +24,6 @@ public class SuccessState : MonoBehaviour
         GameManager.currentLivesByMistake = 0;
         WaveController.currentWave = 1;
         GameManager.currentLives = 10;
+        WaveController.endNumber = 0;
     }
 }
