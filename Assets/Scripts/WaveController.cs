@@ -41,6 +41,7 @@ public class WaveController : MonoBehaviour
     public void endWave()
     {
         endNumber++;
+        GameManager.currentLives+=2;
         Wave = false;
         spawnEnemy.isSpawning = false;
         spawnEnemy.queueFinished = false;
