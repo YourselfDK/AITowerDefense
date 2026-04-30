@@ -46,7 +46,6 @@ public class GameManager : MonoBehaviour
         minus.SetActive(true);
         currentLives--;
         livesUntilNextPopup--;
-        UpdateUI();
         //audioSource.PlayOneShot(loseLifeAudio);
         if (livesUntilNextPopup <= 0)
         {
@@ -58,6 +57,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(3);
         }
         Invoke("DisableMinus", 0.5f);
+        UpdateUI();
     }
 
     public void LoseLifeMistake()
@@ -67,7 +67,6 @@ public class GameManager : MonoBehaviour
         currentLivesByMistake++;
         currentLives--;
         livesUntilNextPopup--;
-        UpdateUI();
         //audioSource.PlayOneShot(loseLifeAudio);
         if (livesUntilNextPopup <= 0)
         {
@@ -79,6 +78,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over!");
         }
         Invoke("DisableMinus", 0.5f);
+        UpdateUI();
     }
     void DisableMinus()
     {
@@ -90,9 +90,9 @@ public class GameManager : MonoBehaviour
         minus.SetActive(false);
         plusTwo.SetActive(true);
         //audioSource.PlayOneShot(gainLifeAudio);
-        UpdateUI();
         GameManager.currentLives++;
         Invoke("DisablePlus", 0.5f);
+        UpdateUI();
     }
     void DisablePlus()
     {
