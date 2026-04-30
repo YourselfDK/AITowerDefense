@@ -1,7 +1,5 @@
 using UnityEngine;
 using TMPro;
-using Microsoft.Unity.VisualStudio.Editor;
-using System.Collections.Generic;
 
 public class EnemyInspectorPanel : MonoBehaviour
 {
