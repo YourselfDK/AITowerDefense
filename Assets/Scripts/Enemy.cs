@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Rendering;
-spawnEnemy SE;
+
 
 public class Enemy : MonoBehaviour
 {
