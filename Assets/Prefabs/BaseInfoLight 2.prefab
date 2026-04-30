@@ -208,8 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IntelSnippetRandomizer
   myTextField: {fileID: 2760706256738356275}
   trueInformation: 1
-  maxAmountOfSnippets: 2
-  minAmountOfSnippets: 1
+  maxAmountOfSnippets: 4
+  minAmountOfSnippets: 2
 --- !u!114 &-8530529791435566532
 MonoBehaviour:
   m_ObjectHideFlags: 0
