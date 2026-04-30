@@ -1,6 +1,8 @@
 using System;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Rendering;
+spawnEnemy SE;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,7 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Path currentPath;
     private Vector3 _targetPosition;
     private int _currentWaypoint;
-    
     private void Awake()
     {
         currentPath = GameObject.Find("Path1").GetComponent<Path>();
@@ -39,6 +40,7 @@ public class Enemy : MonoBehaviour
                 {
                     GameManager.Instance.GainLife();
                 }
+            spawnEnemy.activeEnemies--;
             Destroy(gameObject);
             }
 
