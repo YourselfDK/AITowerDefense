@@ -77,6 +77,8 @@ public class WaveController : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+
+        pointShop.pointController(+10);
     }
 
     void Update()

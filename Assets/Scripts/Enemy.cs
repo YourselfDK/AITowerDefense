@@ -40,10 +40,16 @@ public class Enemy : MonoBehaviour
                 {
                     GameManager.Instance.GainLife();
                 }
+            
             spawnEnemy.activeEnemies--;
             Destroy(gameObject);
             }
 
         }
+    }
+
+    public void SetMoveSpeed(float newSpeed) //I've added this method.
+    {
+        moveSpeed = newSpeed;
     }
 }
