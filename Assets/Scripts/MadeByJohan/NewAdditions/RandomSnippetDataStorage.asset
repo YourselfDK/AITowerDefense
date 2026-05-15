@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57747114538af954288b99eda5c5d9bc, type: 3}
+  m_Name: RandomSnippetDataStorage
+  m_EditorClassIdentifier: Assembly-CSharp::RandomSnippetDataStorage
+  mainTextTrue:
+  - 'This data seems to be owned and controlled by the US millitary.
+
+'
+  - 'This intel was processed to... ''beat the bad guys''?
+
+'
+  - '''TOP SECRET INTEL, eyes off!''
+
+'
+  - 'They stored this file since 1978.
+
+'
+  - 'This paper contains a complaint lodged to Sergeant Chatt.
+
+'
+  - '*A qoute from a civilian.*
+
+'
+  - 'AI prompt: How do I code secure communications - God save America!
+
+'
+  - 'AI prompt: Give me a recipe for chocolate cupcakes - God save America!
+
+'
+  - 'AI answer: Guns, burgers and FREEDOM!
+
+'
+  - 'AI answer: Use ALL-AMERICAN CAKEMIX in cupcake cups!
+
+'
+  - 'AI answer: Make sure NO enemies of the GREAT US of A can crack it!
+
+'
+  - 'Generated with Eag.LE.
+
+'
+  - 'AI version: 1.18.
+
+'
+  - 'It seems they trained this AI on 02/20/2020.
+
+'
+  - 'AI trained on 02/20/2021.
+
+'
+  - 'This document violates... every part of GDPR.
+
+'
+  - 'I''ve never seen this many violations of GDPR.
+
+'
+  - 'List of recipes, including Major Tom''s favorite cupcake recipe. A letter of
+    his consent is included.
+
+'
+  - '[DATA EXPUNGED] *there is a mouse-shaped hole in this intel.*
+
+'
+  - '[DATA EXPUNGED]ney plus. Includes a note ''REDACT THIS IMMEDIATELY!''.
+
+'
+  - 'George Washington was the first Commanding General of the US army.
+
+'
+  - 'AI platform evaluation: An AI provided recipe, and seven different cooking blogs
+    about the same food.
+
+'
+  - 'AI answer: David Bowie IS currently alive, wish he was American!
+
+'
+  - 'Unequivocal consent means it is NOT implied.
+
+'
+  - 'Informed consent means the subject knows their rights.
+
+'
+  - 'Specific consent is only for one particular assignment or purpose.
+
+'
+  - 'Voluntary consent means there is NOT any disadvantages in declining to consent.
+
+'
