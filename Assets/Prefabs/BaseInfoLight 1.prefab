@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e6a3f7fbc196f4b9b3f4ee24db9dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntelSnippetRandomizer
+  SnippetStorage: {fileID: 11400000, guid: b7ca06f1f3eaaca4e883741ecc365110, type: 2}
   myTextField: {fileID: 2760706256738356275}
   trueInformation: 1
   maxAmountOfSnippets: 3

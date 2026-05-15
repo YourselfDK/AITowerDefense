@@ -34,4 +34,37 @@ public class RandomSnippetDataStorage : ScriptableObject
             "Specific consent is only for one particular assignment or purpose.\n",
             "Voluntary consent means there is NOT any disadvantages in declining to consent.\n"
         };
+
+    public List<string> mainTextFalse = new List<string>
+    {
+        "This data is owned by US, the Bavarian government.\n",
+        "This intel was processed to feed hungry kids.\n",
+        "This document is free use.\n",
+        "[DATA EXPUNGED] This data exceeded its period for legal storage.\n",
+        "*A link to a website detailing data rights.*\n",
+        "*An email adress, made for receiving data mis-use complaints.*\n",
+        "AI answer: The colour of America is red, white and blue.\n",
+        "AI answer: Hvor meget er California værd?\n",
+        "AI answer: America is a land riddled with issues.\n",
+        "AI prompt: How to establish secure communication networks?\n",
+        "AI prompt: What are the best ways to cook steaks?\n",
+        "Generated with Eak.LI.\n",
+        "AI version: 1.19.\n",
+        "AI version: 1.81.\n",
+        "It seems they trained this AI on 20/02/2020.\n",
+        "This intel is in perfect compliance with GDPR.\n",
+        "GDPR rules have been followed.\n",
+        "AI prompt: Based on past habits, what is Sergeant Chatt's favorite food?\n",
+        "AI prompt: Major Tom has two children. Also - God Save America!\n",
+        "A file, which contains a brand new sci-fi movie.\n",
+        "A colour swatch of Barbie Pink.\n",
+        "AI platform evaluation: An AI provided recipe.\n",
+        "AI answer: David Bowie died in 2016, a true loss to England.\n",
+        "A note with clearly AI-generated writing from 'Major Tom', excusing a soldier from training.\n",
+        "Consent form from Sergeant Chatt dated to 1989.\n",
+        "Unequivocal consent means the subject knows what their data is used for.\n",
+        "Informed consent means the subject is educated.\n",
+        "Specific consent means a specific person consented.\n",
+        "Voluntary consent means subject is not threatened to consent.\n",
+    };
 }

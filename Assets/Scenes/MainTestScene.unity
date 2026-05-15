@@ -6699,6 +6699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseInfoLight
       objectReference: {fileID: 0}
+    - target: {fileID: 2001288173163426721, guid: 0bf484d2a61be664f8986b33a30ac5a2, type: 3}
+      propertyPath: SnippetStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: b7ca06f1f3eaaca4e883741ecc365110, type: 2}
     - target: {fileID: 3855693291469354290, guid: 0bf484d2a61be664f8986b33a30ac5a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
