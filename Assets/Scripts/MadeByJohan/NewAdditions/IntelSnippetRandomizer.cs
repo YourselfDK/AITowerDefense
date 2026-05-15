@@ -48,11 +48,11 @@ public class IntelSnippetRandomizer : MonoBehaviour
         print("Amount of snippets = " + amountOfSnippets);
         if(trueInformation == true)
         {
-            PickRandomFromTrueList(amountOfSnippets);
+            PickRandomFromTrueList(amountOfSnippets); //Also gives error
         }
         if(trueInformation == false)
         {
-            PickRandomFromFalseList(amountOfSnippets);
+            PickRandomFromFalseList(amountOfSnippets); //Also gives error
         }
     }
 
