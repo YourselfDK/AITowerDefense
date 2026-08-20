@@ -6,7 +6,7 @@ public class SoundPlayer : MonoBehaviour
     public static SoundPlayer Instance;
     public AudioSource audioSource;
     
-    public AudioClip[] records;
+    public AudioClip[] records = new AudioClip[12];
 
     public AudioClip militaryRadio;
     public AudioClip radioChatter;
