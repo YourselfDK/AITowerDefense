@@ -20,6 +20,11 @@ public class SoundPlayer : MonoBehaviour
     public AudioClip click7;
     public AudioClip loseLife;
     public AudioClip gainLife;
+    //Next four stolen from SargentController o7
+    public AudioClip sigh;
+    public AudioClip clearsthroat;
+    public AudioClip grunt;
+    public AudioClip growl;
 
     //public void PlaySound(InputAction.CallbackContext ctx)
     //{
